@@ -27,6 +27,18 @@
 <!------------------------------------------------------>
 </tr>
 
+
+<tr>
+<!------------------------------------------------------>
+<td>2016/08/16</td>
+<td>用 Node.js 打造 FB 天氣機器人</td>
+<td>盧承億</td>
+<td>[Node.js 打造 FB 天氣機器人](https://larry850806.github.io/weather/)</td>
+<td>[Youtube](https://youtu.be/c5gz5TxtEQk)</td>
+<td>[點我跳轉](https://github.com/onlinereadbook/booknodejs/issues/5)</td>
+<!------------------------------------------------------>
+</tr>
+
 <tr>
 <!------------------------------------------------------>
 <td>												</td>
@@ -63,17 +75,6 @@
 <td></td>
 <td>[Markdown<br>HackMD](https://youtu.be/8maKJ6CJ9no)</td>
 <td></td>
-<!------------------------------------------------------>
-</tr>
-
-<tr>
-<!------------------------------------------------------>
-<td>2016/08/16</td>
-<td>用 Node.js 打造 FB 天氣機器人</td>
-<td>盧承億</td>
-<td>[Node.js 打造 FB 天氣機器人](https://larry850806.github.io/weather/)</td>
-<td>[Youtube](https://youtu.be/c5gz5TxtEQk)</td>
-<td>[點我跳轉](https://github.com/onlinereadbook/booknodejs/issues/5)</td>
 <!------------------------------------------------------>
 </tr>
 
