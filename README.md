@@ -13,7 +13,7 @@
 
 ## [[02][迷你黑客松專案]](https://github.com/onlinereadbook/mini-hackathon)
 
-## [[03][迷你黑客松過往作品及討論區]](https://github.com/onlinereadbook/mini-hackathon)
+## [[03][迷你黑客松過往作品及討論區]](https://github.com/onlinereadbook/mini-hackathon/tree/master/%5B03%5D%5B%E8%AE%80%E6%9B%B8%E6%9C%83%E9%81%8E%E5%BE%80%E5%BD%B1%E7%89%87%E5%8F%8A%E8%A8%8E%E8%AB%96%E5%8D%80%5D)
 
 ## [[09][其他線上讀書會傳送門]](https://github.com/onlinereadbook/mini-hackathon/tree/master/%5B09%5D%5B%E5%85%B6%E4%BB%96%E7%B7%9A%E4%B8%8A%E8%AE%80%E6%9B%B8%E6%9C%83%E5%82%B3%E9%80%81%E9%96%80%5D)
 
