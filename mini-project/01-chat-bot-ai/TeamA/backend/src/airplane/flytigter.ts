@@ -47,7 +47,7 @@ export async function exec(dateFrom: Date | moment.Moment = moment().add(1, 'day
     let html = data.d;
 
     console.log('html');
-    let out = path.join(__dirname, `flypeach_${Date.now()}.html`);
+    let out = path.join(__dirname, `flytigher_${Date.now()}.html`);
     fs.writeFileSync(out, html);
 
     let $ = cheerio.load(html);
