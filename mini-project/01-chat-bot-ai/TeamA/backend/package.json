@@ -19,6 +19,7 @@
   "dependencies": {
     "cheerio": "^0.22.0",
     "moment": "^2.15.1",
-    "request": "^2.75.0"
+    "request": "^2.75.0",
+    "sleep": "^4.0.0"
   }
 }
