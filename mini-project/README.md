@@ -34,6 +34,17 @@
 
 <tr>
 <!------------------------------------------------------>
+<td>2016/10/22 19:30								</td>
+<td>Chat BOT AI										</td>
+<td>每週不一樣的隊友									</td>
+<td>												</td>
+<td>[（活動網址）](https://www.facebook.com/events/668211873348298/)</td>
+<td>[點我跳轉](https://github.com/onlinereadbook/mini-hackathon/issues/1)</td>
+<!------------------------------------------------------>
+</tr>
+
+<tr>
+<!------------------------------------------------------>
 <td>												</td>
 <td>												</td>
 <td>												</td>
@@ -84,3 +95,17 @@
 ><br>【Coggle 連結】[要規劃流程的朋友請私我mail嚕](https://coggle.it/diagram/V_8nGfIPVt5auqhf)
 
 <br><hr>
+
+## 本週迷你黑客松 隊友 趕快互加FB
+>時間：[2016/10/16 0232](https://www.facebook.com/groups/1274976625880806/permalink/1289684494410019/)
+><br>聊聊要做什麼吧
+><br>A組 陳默司 李杰駿 紀相安
+><br>B組 bruce larry lu larry haung
+><br>C組 andy paul 陳柏任
+><br>D組 陳裕瑄 Tomas
+><br>還沒加到要一起玩趕快敲我嚕
+><br>Ａ組的樂桃抓飛機 node part 已經完成雛形嚕 可以參考
+><br>[【GitHub 連結】](https://github.com/mosluce/HackthonTeamA)
+
+<br><hr>
+
