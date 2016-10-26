@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="main"
+    errors="0" failures="0" hostname="" id="" package="main" skipped="0"
+    tests="1" time="40.58" timestamp="Sat, 22 Oct 2016 13:31:39 GMT">
+  
+    <testcase name="抓取虎航的資料" time="40.58" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
