@@ -40,15 +40,20 @@ async function getAvailability(dateFrom: Date | moment.Moment, dateTo: Date | mo
     });
 }
 
-export async function exec(dateFrom: Date | moment.Moment = moment().add(1, 'day'), dateTo: Date | moment.Moment = moment().add(2, 'day'), iAdult: number = 1, iChild: number = 0, origin: string = 'TPE', destination: string = 'HND'): Promise<AirplaneResult[]> {
-    //因為格式不確定所以指定為 any (即一般 json 物件)
+export async function exec(dateFrom: Date | moment.Moment = moment().add(1, 'day'),
+    dateTo: Date | moment.Moment = moment().add(2, 'day'),
+    iAdult: number = 1,
+    iChild: number = 1,
+    origin: string = 'TPE',
+    destination: string = 'HND'): Promise<AirplaneResult[]> {
+    //因為格式不確定所以指定為 any (即一般 json 物件) 
     let data: any = await getAvailability(dateFrom, dateTo, iAdult, iChild, origin, destination);
 
     let html = data.d;
 
-    console.log('html');
-    let out = path.join(__dirname, `flypeach_${Date.now()}.html`);
-    fs.writeFileSync(out, html);
+    // console.log('html');
+    // let out = path.join(__dirname, `flypeach_${Date.now()}.html`);
+    // fs.writeFileSync(out, html);
 
     let $ = cheerio.load(html);
 
@@ -72,13 +77,12 @@ export async function exec(dateFrom: Date | moment.Moment = moment().add(1, 'day
 
         //切出價錢
         let price = parseFloat(priceString.replace(new RegExp(`${currencyCode}|\\$|,|~`, 'g'), ''));
-
-
+        price = isNaN(price) ? 0 : price;
 
 
         results.push({
             date, weekDay, currencyCode, price,
-            source: '樂桃'
+            source: '樂桃', from: origin, to: destination
         });
 
     });

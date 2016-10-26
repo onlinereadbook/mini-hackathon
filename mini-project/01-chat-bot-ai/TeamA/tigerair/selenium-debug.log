@@ -1,0 +1,91 @@
+21:31:37.524 INFO - Launching a standalone Selenium Server
+21:31:37.637 INFO - Java: Oracle Corporation 25.25-b02
+21:31:37.637 INFO - OS: Mac OS X 10.12 x86_64
+21:31:37.675 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+21:31:37.904 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+21:31:37.906 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+21:31:37.906 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+21:31:37.907 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+21:31:37.910 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+21:31:37.910 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+21:31:38.125 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+21:31:38.125 INFO - Selenium Server is up and running
+21:31:40.023 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Dist / Main / Main, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:31:40.048 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Dist / Main / Main, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.23.409710 (0c4084804897ac45b5ff65a690ec6583b97225c0) on port 3529
+Only local connections are allowed.
+21:31:42.862 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Dist / Main / Main, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:31:42.897 INFO - Executing: [get: https://booking.tigerair.com/Search.aspx?culture=zh-TW])
+21:31:47.707 INFO - Done: [get: https://booking.tigerair.com/Search.aspx?culture=zh-TW]
+21:31:47.721 INFO - Executing: [find elements: By.cssSelector: body])
+21:31:47.802 INFO - Done: [find elements: By.cssSelector: body]
+21:31:47.809 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: body]])
+21:31:47.839 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: body]]
+21:31:47.853 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]])
+21:31:47.894 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]
+21:31:47.911 INFO - Executing: [click: 1 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]])
+21:31:48.137 INFO - Done: [click: 1 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]]
+21:31:48.152 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]])
+21:31:48.226 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]
+21:31:48.233 INFO - Executing: [click: 2 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]])
+21:31:48.329 INFO - Done: [click: 2 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]]
+21:31:48.338 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]])
+21:31:48.385 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]
+21:31:48.392 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]])
+21:31:48.491 INFO - Done: [click: 3 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]]
+21:31:48.502 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="22"]])
+21:31:48.545 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="22"]]
+21:31:48.559 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="22"]]])
+21:31:48.659 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="22"]]]
+21:31:48.666 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]])
+21:31:48.717 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]
+21:31:48.726 INFO - Executing: [click: 5 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]])
+21:31:48.823 INFO - Done: [click: 5 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]]
+21:31:48.839 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="22"]])
+21:31:48.937 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="22"]]
+21:31:48.944 INFO - Executing: [click: 6 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="22"]]])
+21:31:49.083 INFO - Done: [click: 6 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="22"]]]
+21:31:49.094 INFO - Executing: [find element: By.cssSelector: .btnSearchPanel])
+21:31:49.165 INFO - Done: [find element: By.cssSelector: .btnSearchPanel]
+21:31:49.174 INFO - Executing: [click: 7 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: .btnSearchPanel]])
+21:32:03.164 INFO - Done: [click: 7 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: .btnSearchPanel]]
+21:32:05.179 INFO - Executing: [get page source])
+21:32:05.232 INFO - Done: [get page source]
+21:32:07.523 INFO - Executing: [get: https://booking.tigerair.com/Search.aspx?culture=zh-TW])
+21:32:09.055 INFO - Done: [get: https://booking.tigerair.com/Search.aspx?culture=zh-TW]
+21:32:09.069 INFO - Executing: [find elements: By.cssSelector: body])
+21:32:09.114 INFO - Done: [find elements: By.cssSelector: body]
+21:32:09.120 INFO - Executing: [is displayed: 8 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: body]])
+21:32:09.146 INFO - Done: [is displayed: 8 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: body]]
+21:32:09.158 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]])
+21:32:09.188 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]
+21:32:09.194 INFO - Executing: [click: 9 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]])
+21:32:09.276 INFO - Done: [click: 9 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]]
+21:32:09.281 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]])
+21:32:09.306 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]
+21:32:09.311 INFO - Executing: [click: 10 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]])
+21:32:09.387 INFO - Done: [click: 10 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]]
+21:32:09.395 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]])
+21:32:09.444 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]
+21:32:09.453 INFO - Executing: [click: 11 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]])
+21:32:09.520 INFO - Done: [click: 11 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]]
+21:32:09.526 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="31"]])
+21:32:09.563 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="31"]]
+21:32:09.568 INFO - Executing: [click: 12 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="31"]]])
+21:32:09.617 INFO - Done: [click: 12 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="31"]]]
+21:32:09.630 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]])
+21:32:09.686 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]
+21:32:09.707 INFO - Executing: [click: 13 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]])
+21:32:09.785 INFO - Done: [click: 13 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]]
+21:32:09.792 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="31"]])
+21:32:09.841 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="31"]]
+21:32:09.848 INFO - Executing: [click: 14 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="31"]]])
+21:32:09.903 INFO - Done: [click: 14 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="31"]]]
+21:32:09.912 INFO - Executing: [find element: By.cssSelector: .btnSearchPanel])
+21:32:09.938 INFO - Done: [find element: By.cssSelector: .btnSearchPanel]
+21:32:09.944 INFO - Executing: [click: 15 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: .btnSearchPanel]])
+21:32:15.258 INFO - Done: [click: 15 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: .btnSearchPanel]]
+21:32:17.297 INFO - Executing: [get page source])
+21:32:17.486 INFO - Done: [get page source]

@@ -1,0 +1,30 @@
+{
+  "name": "nightwatch_crawler",
+  "description": "crawler nightwatch.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && nightwatch --test test-dist/main/main.js",
+    "build": "babel -s -d test-dist test"
+  },
+  "homepage": "http://github.com/tpai",
+  "dependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "cheerio": "^0.22.0",
+    "firebase": "^3.5.1",
+    "fs": "^0.0.1-security",
+    "moment": "^2.15.1",
+    "nightwatch": "^0.9.6",
+    "path": "^0.12.7",
+    "phantomjs": "^2.1.7+deprecated",
+    "request": "^2.65.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-module-method": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-stage-0": "^6.16.0"
+  }
+}

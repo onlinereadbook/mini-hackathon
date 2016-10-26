@@ -9,8 +9,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 const request = require('request');
 const cheerio = require('cheerio');
-const fs = require('fs');
-const path = require('path');
 const moment = require('moment');
 function getAvailability(dateFrom, dateTo, iAdult, iChild, origin, destination) {
     return __awaiter(this, void 0, void 0, function* () {
@@ -45,14 +43,14 @@ function getAvailability(dateFrom, dateTo, iAdult, iChild, origin, destination) 
         });
     });
 }
-function exec(dateFrom = moment().add(1, 'day'), dateTo = moment().add(2, 'day'), iAdult = 1, iChild = 0, origin = 'TPE', destination = 'HND') {
+function exec(dateFrom = moment().add(1, 'day'), dateTo = moment().add(2, 'day'), iAdult = 1, iChild = 1, origin = 'TPE', destination = 'HND') {
     return __awaiter(this, void 0, void 0, function* () {
-        //因為格式不確定所以指定為 any (即一般 json 物件)
+        //因為格式不確定所以指定為 any (即一般 json 物件) 
         let data = yield getAvailability(dateFrom, dateTo, iAdult, iChild, origin, destination);
         let html = data.d;
-        console.log('html');
-        let out = path.join(__dirname, `flypeach_${Date.now()}.html`);
-        fs.writeFileSync(out, html);
+        // console.log('html');
+        // let out = path.join(__dirname, `flypeach_${Date.now()}.html`);
+        // fs.writeFileSync(out, html);
         let $ = cheerio.load(html);
         let results = [];
         $(".showdateselect").each((i, elem) => {
@@ -68,9 +66,10 @@ function exec(dateFrom = moment().add(1, 'day'), dateTo = moment().add(2, 'day')
             let currencyCode = priceString.split('$')[0];
             //切出價錢
             let price = parseFloat(priceString.replace(new RegExp(`${currencyCode}|\\$|,|~`, 'g'), ''));
+            price = isNaN(price) ? 0 : price;
             results.push({
                 date, weekDay, currencyCode, price,
-                source: '樂桃'
+                source: '樂桃', from: origin, to: destination
             });
         });
         return results;

@@ -45,7 +45,7 @@ function getAvailability(dateFrom, dateTo, iAdult, iChild, origin, destination) 
         });
     });
 }
-function exec(dateFrom = moment().add(1, 'day'), dateTo = moment().add(2, 'day'), iAdult = 1, iChild = 0, origin = 'TPE', destination = 'HND') {
+function exec(dateFrom = moment().add(1, 'day'), dateTo = moment().add(2, 'day'), iAdult = 1, iChild = 1, origin = 'TPE', destination = 'HND') {
     return __awaiter(this, void 0, void 0, function* () {
         //因為格式不確定所以指定為 any (即一般 json 物件)
         let data = yield getAvailability(dateFrom, dateTo, iAdult, iChild, origin, destination);
