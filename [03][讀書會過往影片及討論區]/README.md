@@ -42,11 +42,11 @@
 <tr>
 <!------------------------------------------------------>
 <td>2016/10/15 20:30								</td>
-<td>迷你黑客松會前會									</td>
+<td>第一次迷你黑客松會前會									</td>
 <td>相安大											</td>
 <td>												</td>
 <td>[（活動網址）](https://www.facebook.com/events/1631664227126289/)</td>
-<td>												</td>
+<td>[Coggle](https://coggle.it/diagram/V_8nGfIPVt5auqhf)</td>
 <!------------------------------------------------------>
 </tr>
 
@@ -67,8 +67,19 @@
 <td>heroku & express 入門。livemap-前置學習			</td>
 <td>默司大											</td>
 <td>												</td>
-<td>[（活動網址）](https://www.facebook.com/groups/1274976625880806/)	</td>
+<td>[FaceBook](https://www.facebook.com/readbook999/videos/1823182457924176/)</td>
 <td>[點我跳轉](https://github.com/onlinereadbook/mini-hackathon/issues/2)</td>
+<!------------------------------------------------------>
+</tr>
+
+<tr>
+<!------------------------------------------------------>
+<td>2016/10/26 10:00								</td>
+<td>chapter 2 地圖與隊友								</td>
+<td>相安大											</td>
+<td>												</td>
+<td>[（活動網址）](https://www.facebook.com/events/1721540341500127/)</td>
+<td>[Coggle](https://coggle.it/diagram/WBAPbWmKsRR5XFRX)</td>
 <!------------------------------------------------------>
 </tr>
 
