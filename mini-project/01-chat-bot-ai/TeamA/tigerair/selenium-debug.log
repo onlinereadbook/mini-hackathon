@@ -1,91 +1,100 @@
-21:31:37.524 INFO - Launching a standalone Selenium Server
-21:31:37.637 INFO - Java: Oracle Corporation 25.25-b02
-21:31:37.637 INFO - OS: Mac OS X 10.12 x86_64
-21:31:37.675 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
-21:31:37.904 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+15:17:30.965 INFO - Launching a standalone Selenium Server
+15:17:31.027 INFO - Java: Oracle Corporation 25.25-b02
+15:17:31.027 INFO - OS: Mac OS X 10.12.1 x86_64
+15:17:31.053 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+15:17:31.163 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
 registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
-21:31:37.906 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+15:17:31.163 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
 registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
-21:31:37.906 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-21:31:37.907 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-21:31:37.910 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
-21:31:37.910 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
-21:31:38.125 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-21:31:38.125 INFO - Selenium Server is up and running
-21:31:40.023 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Dist / Main / Main, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
-21:31:40.048 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Dist / Main / Main, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.23.409710 (0c4084804897ac45b5ff65a690ec6583b97225c0) on port 3529
+15:17:31.164 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:17:31.164 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+15:17:31.166 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+15:17:31.167 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+15:17:31.284 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+15:17:31.284 INFO - Selenium Server is up and running
+15:17:32.198 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Dist / Main / Main, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+15:17:32.217 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Dist / Main / Main, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.23.409710 (0c4084804897ac45b5ff65a690ec6583b97225c0) on port 13654
 Only local connections are allowed.
-21:31:42.862 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Dist / Main / Main, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
-21:31:42.897 INFO - Executing: [get: https://booking.tigerair.com/Search.aspx?culture=zh-TW])
-21:31:47.707 INFO - Done: [get: https://booking.tigerair.com/Search.aspx?culture=zh-TW]
-21:31:47.721 INFO - Executing: [find elements: By.cssSelector: body])
-21:31:47.802 INFO - Done: [find elements: By.cssSelector: body]
-21:31:47.809 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: body]])
-21:31:47.839 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: body]]
-21:31:47.853 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]])
-21:31:47.894 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]
-21:31:47.911 INFO - Executing: [click: 1 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]])
-21:31:48.137 INFO - Done: [click: 1 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]]
-21:31:48.152 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]])
-21:31:48.226 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]
-21:31:48.233 INFO - Executing: [click: 2 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]])
-21:31:48.329 INFO - Done: [click: 2 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]]
-21:31:48.338 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]])
-21:31:48.385 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]
-21:31:48.392 INFO - Executing: [click: 3 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]])
-21:31:48.491 INFO - Done: [click: 3 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]]
-21:31:48.502 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="22"]])
-21:31:48.545 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="22"]]
-21:31:48.559 INFO - Executing: [click: 4 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="22"]]])
-21:31:48.659 INFO - Done: [click: 4 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="22"]]]
-21:31:48.666 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]])
-21:31:48.717 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]
-21:31:48.726 INFO - Executing: [click: 5 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]])
-21:31:48.823 INFO - Done: [click: 5 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]]
-21:31:48.839 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="22"]])
-21:31:48.937 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="22"]]
-21:31:48.944 INFO - Executing: [click: 6 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="22"]]])
-21:31:49.083 INFO - Done: [click: 6 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="22"]]]
-21:31:49.094 INFO - Executing: [find element: By.cssSelector: .btnSearchPanel])
-21:31:49.165 INFO - Done: [find element: By.cssSelector: .btnSearchPanel]
-21:31:49.174 INFO - Executing: [click: 7 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: .btnSearchPanel]])
-21:32:03.164 INFO - Done: [click: 7 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: .btnSearchPanel]]
-21:32:05.179 INFO - Executing: [get page source])
-21:32:05.232 INFO - Done: [get page source]
-21:32:07.523 INFO - Executing: [get: https://booking.tigerair.com/Search.aspx?culture=zh-TW])
-21:32:09.055 INFO - Done: [get: https://booking.tigerair.com/Search.aspx?culture=zh-TW]
-21:32:09.069 INFO - Executing: [find elements: By.cssSelector: body])
-21:32:09.114 INFO - Done: [find elements: By.cssSelector: body]
-21:32:09.120 INFO - Executing: [is displayed: 8 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: body]])
-21:32:09.146 INFO - Done: [is displayed: 8 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: body]]
-21:32:09.158 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]])
-21:32:09.188 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]
-21:32:09.194 INFO - Executing: [click: 9 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]])
-21:32:09.276 INFO - Done: [click: 9 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1 option[value="KHH"]]]
-21:32:09.281 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]])
-21:32:09.306 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]
-21:32:09.311 INFO - Executing: [click: 10 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]])
-21:32:09.387 INFO - Done: [click: 10 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchViewdestinationStation1 option[value="KIX"]]]
-21:32:09.395 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]])
-21:32:09.444 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]
-21:32:09.453 INFO - Executing: [click: 11 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]])
-21:32:09.520 INFO - Done: [click: 11 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth1 option[value="2016-10"]]]
-21:32:09.526 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="31"]])
-21:32:09.563 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="31"]]
-21:32:09.568 INFO - Executing: [click: 12 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="31"]]])
-21:32:09.617 INFO - Done: [click: 12 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay1 option[value="31"]]]
-21:32:09.630 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]])
-21:32:09.686 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]
-21:32:09.707 INFO - Executing: [click: 13 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]])
-21:32:09.785 INFO - Done: [click: 13 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketMonth2 option[value="2016-10"]]]
-21:32:09.792 INFO - Executing: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="31"]])
-21:32:09.841 INFO - Done: [find element: By.cssSelector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="31"]]
-21:32:09.848 INFO - Executing: [click: 14 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="31"]]])
-21:32:09.903 INFO - Done: [click: 14 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: #ControlGroupSearchView_AvailabilitySearchInputSearchView_DropDownListMarketDay2 option[value="31"]]]
-21:32:09.912 INFO - Executing: [find element: By.cssSelector: .btnSearchPanel])
-21:32:09.938 INFO - Done: [find element: By.cssSelector: .btnSearchPanel]
-21:32:09.944 INFO - Executing: [click: 15 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: .btnSearchPanel]])
-21:32:15.258 INFO - Done: [click: 15 [[ChromeDriver: chrome on MAC (78ef2ff4701a02e1928339d264e5da1c)] -> css selector: .btnSearchPanel]]
-21:32:17.297 INFO - Executing: [get page source])
-21:32:17.486 INFO - Done: [get page source]
+15:17:34.020 WARN - Exception thrown
+java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: java.lang.reflect.InvocationTargetException
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: '118-232-201-47.dynamic.kbronet.com.tw', ip: '118.232.201.47', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.openqa.selenium.remote.server.DefaultSession.execute(DefaultSession.java:183)
+	at org.openqa.selenium.remote.server.DefaultSession.<init>(DefaultSession.java:119)
+	at org.openqa.selenium.remote.server.DefaultSession.createSession(DefaultSession.java:95)
+	at org.openqa.selenium.remote.server.DefaultDriverSessions.newSession(DefaultDriverSessions.java:124)
+	at org.openqa.selenium.remote.server.handler.NewSession.handle(NewSession.java:59)
+	at org.openqa.selenium.remote.server.handler.NewSession.handle(NewSession.java:1)
+	at org.openqa.selenium.remote.server.rest.ResultConfig.handle(ResultConfig.java:111)
+	at org.openqa.selenium.remote.server.JsonHttpCommandHandler.handleRequest(JsonHttpCommandHandler.java:79)
+	at org.openqa.selenium.remote.server.DriverServlet.handleRequest(DriverServlet.java:204)
+	at org.openqa.selenium.remote.server.DriverServlet.doPost(DriverServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.openqa.selenium.remote.server.DriverServlet.service(DriverServlet.java:132)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.openqa.jetty.jetty.servlet.ServletHolder.handle(ServletHolder.java:428)
+	at org.openqa.jetty.jetty.servlet.ServletHandler.dispatch(ServletHandler.java:680)
+	at org.openqa.jetty.jetty.servlet.ServletHandler.handle(ServletHandler.java:571)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1526)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1479)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:920)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:358)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:537)
+Caused by: org.openqa.selenium.WebDriverException: java.lang.reflect.InvocationTargetException
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: '118-232-201-47.dynamic.kbronet.com.tw', ip: '118.232.201.47', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:113)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.newInstance(DefaultDriverProvider.java:97)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:60)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:222)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.server.DefaultDriverProvider.callConstructor(DefaultDriverProvider.java:103)
+	... 9 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created exception
+from unknown error: Runtime.evaluate missing 'wasThrown'
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.23.409710 (0c4084804897ac45b5ff65a690ec6583b97225c0),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.26 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: '118-232-201-47.dynamic.kbronet.com.tw', ip: '118.232.201.47', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:138)
+	... 14 more
+15:17:34.028 WARN - Exception: session not created exception
+from unknown error: Runtime.evaluate missing 'wasThrown'
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.23.409710 (0c4084804897ac45b5ff65a690ec6583b97225c0),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.26 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: '118-232-201-47.dynamic.kbronet.com.tw', ip: '118.232.201.47', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
