@@ -7,38 +7,52 @@ import ContentAdd from 'material-ui/svg-icons/content/add';
 
 import Map from '../components/Map'
 import MarkerList from '../components/MarkerList'
+import BottomNavigationExampleSimple from '../components/BottonNavigation'
+import FontIcon from 'material-ui/FontIcon';
+import { BottomNavigation, BottomNavigationItem } from 'material-ui/BottomNavigation';
+import Paper from 'material-ui/Paper';
+import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
+
+
 
 const style = {
     container: {
         width: '100%',
         height: '100%',
         backgroundColor: '#2d2b2b',
-        position: 'relative', 
+        position: 'relative',
         overflow: 'hidden'
     },
     content: {
-        position: 'absolute', 
-        left: 0, 
-        top: 0, 
-        width: '100%', 
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: '100%',
         height: '100%',
         zIndex: 0
     },
     list: {
-        position: 'absolute', 
-        right: 0, 
-        top: 0, 
-        width: '20%', 
+        position: 'absolute',
+        right: 0,
+        top: 0,
+        width: '20%',
         height: '100%',
         opacity: 0.9,
         zIndex: 1
     },
     functionButton: {
-        position: 'absolute', 
-        right: '22%', 
-        top: 0, 
-        width: '3%', 
+        position: 'absolute',
+        right: '22%',
+        top: 0,
+        width: '3%',
         height: '100%',
+        zIndex: 1,
+        textAlign: 'center'
+    },
+    ButtonNavigation: {
+        position: 'absolute',
+        bottom: 0,
+        width: '100%',
         zIndex: 1,
         textAlign: 'center'
     }
@@ -70,8 +84,8 @@ class App extends Component {
                 const { markerAction, markers } = that.props
                 const location = { lat: position.coords.latitude, lng: position.coords.longitude }
 
-                let myLocation = markers.filter(x=>x.userId == 'andy')[0]
-                
+                let myLocation = markers.filter(x => x.userId == 'andy')[0]
+
                 if (myLocation) {
                     markerAction.setLocation('andy', location)
                 } else {
@@ -84,7 +98,7 @@ class App extends Component {
 
                     this.setMapCenter(location)
                 }
-                
+
             })
         }
     }
@@ -99,12 +113,20 @@ class App extends Component {
                 </div>
                 <div style={style.list}>
                     <MarkerList markers={markers} setMapCenter={this.setMapCenter} />
-                </div> 
+                </div>
                 <div style={style.functionButton}>
                     <FloatingActionButton mini={true} onClick={this.addMarker.bind(this)}>
                         <ContentAdd />
                     </FloatingActionButton>
                 </div>
+
+                <div style={style.ButtonNavigation}>
+                    <BottomNavigationExampleSimple ></BottomNavigationExampleSimple >
+
+                </div>
+
+
+
             </div>
         )
     }
