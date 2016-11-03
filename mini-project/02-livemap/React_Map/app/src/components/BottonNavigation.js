@@ -24,14 +24,13 @@ class BottomNavigationExampleSimple extends Component {
     };
     constructor(props) {
         super(props);
-        // this.handleOpen = this.handleOpen.bind(this)
+        this.handleOpen = this.handleOpen.bind(this)
 
         // this.state = { open: false };
     }
 
 
     handleOpen() {
-        console.log('123')
         this.props.handleOpen();
     };
 
@@ -58,7 +57,7 @@ class BottomNavigationExampleSimple extends Component {
                     <BottomNavigationItem
                         label="room"
                         icon={nearbyIcon}
-                        onTouchTap={this.handleOpen}
+                        onTouchTap={() => { this.handleOpen() } }
 
                         />
                 </BottomNavigation>

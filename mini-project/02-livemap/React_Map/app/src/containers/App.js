@@ -80,10 +80,11 @@ class App extends Component {
     }
 
     handleOpen() {
-        console.log('1111');
-        this.setState({
-            open: true
-        })
+        if (this.state.open == false) {
+            this.setState({ open: true })
+        } else {
+            this.setState({ open: false })
+        }
     }
 
     componentDidMount() {
