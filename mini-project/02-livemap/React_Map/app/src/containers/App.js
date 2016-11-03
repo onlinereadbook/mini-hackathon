@@ -13,7 +13,8 @@ import { BottomNavigation, BottomNavigationItem } from 'material-ui/BottomNaviga
 import Paper from 'material-ui/Paper';
 import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 
-
+import Dialog from 'material-ui/Dialog';
+import Menu from '../components/Menu'
 
 const style = {
     container: {
@@ -71,8 +72,18 @@ class App extends Component {
             init: {
                 center: { lat: 25.0339031, lng: 121.5623212 },
                 zoom: zoom
-            }
+            },
+            open: false
         }
+
+        this.handleOpen = this.handleOpen.bind(this)
+    }
+
+    handleOpen() {
+        console.log('1111');
+        this.setState({
+            open: true
+        })
     }
 
     componentDidMount() {
@@ -121,13 +132,15 @@ class App extends Component {
                 </div>
 
                 <div style={style.ButtonNavigation}>
-                    <BottomNavigationExampleSimple ></BottomNavigationExampleSimple >
+                    <BottomNavigationExampleSimple handleOpen={this.handleOpen}></BottomNavigationExampleSimple >
 
                 </div>
 
+                <div>
+                    <Menu open={this.state.open} ></Menu>
+                </div>
 
-
-            </div>
+            </div >
         )
     }
 

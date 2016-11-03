@@ -1,6 +1,6 @@
 import React from 'react'
 import Avatar from 'material-ui/Avatar'
-import {List, ListItem} from 'material-ui/List'
+import { List, ListItem } from 'material-ui/List'
 
 const style = {
     mapList: {
@@ -20,24 +20,39 @@ const style = {
     }
 }
 
-const MarkerList = ({markers, setMapCenter}) => {
-    return (
-        <List style={style.mapList}>
-            {
-                markers.map((marker, idx) => {
-                    return (
-                        <ListItem
-                            style={style.listItem}
-                            key={`marker_${idx}`}
-                            primaryText={marker.text}
-                            leftAvatar={<Avatar src={marker.photo} style={style.avatar} />}
-                            onClick={() => {setMapCenter(marker.position)}}
-                        />
-                    )
-                })
-            }
-        </List>
-    )
-}
 
-export default MarkerList
+export default class MarkerList extends React.Component {
+
+    //const MarkerList = ({markers, setMapCenter}) => {
+    constructor(props) {
+        super(props);
+
+        this.state = { open: false };
+
+
+    }
+
+    render() {
+        const { markers, setMapCenter } = this.props;
+        return (
+            <List style={style.mapList}>
+                {
+                    markers.map((marker, idx) => {
+
+                        return (
+                            <ListItem
+                                style={style.listItem}
+                                key={`marker_${idx}`}
+                                primaryText={marker.text}
+                                leftAvatar={<Avatar src={marker.photo} style={style.avatar} />}
+                                onClick={() => { setMapCenter(marker.position) } }
+                                />
+                        )
+                    })
+                }
+            </List>
+        )
+    }
+    //}
+}
+//export default MarkerList

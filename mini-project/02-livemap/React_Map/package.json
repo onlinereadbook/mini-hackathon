@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack-dev-server.config.js --port 8888 --hot --devtool eval --progress --colors --content-base app",
+    "dev": "webpack-dev-server --config webpack-dev-server.config.js --port 8888 --hot --devtool eval --progress --colors --content-base app -d ",
     "deploy": "webpack -p --config webpack-deploy.config.js --progress --colors"
   },
   "keywords": [],
@@ -39,5 +39,8 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.1.5"
   }
 }

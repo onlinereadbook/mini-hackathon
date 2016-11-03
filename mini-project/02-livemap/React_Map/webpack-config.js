@@ -5,7 +5,7 @@ var webpack = require('webpack'),
     ExtractTextPlugin = require('extract-text-webpack-plugin'),
     HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = function(options){
+module.exports = function (options) {
 
     var outputpath = options.outputpath,
         entry = {
@@ -20,7 +20,7 @@ module.exports = function(options){
             new webpack.HotModuleReplacementPlugin()
         ];
 
-    switch (options.status){
+    switch (options.status) {
         case 'dev':
 
             entry.bundle = [
@@ -30,15 +30,15 @@ module.exports = function(options){
             ];
 
             loaders.push(
-                { test : /\.scss$/, loader:'style!css!postcss!sass?includePaths[]=' + path.resolve(__dirname, './node_modules/compass-mixins/lib') },
-                { test : /\.css$/, loader:'style!css' },
-                { test : /\.(jpg|png|gif)$/, loader: 'url-loader' },
+                { test: /\.scss$/, loader: 'style!css!postcss!sass?includePaths[]=' + path.resolve(__dirname, './node_modules/compass-mixins/lib') },
+                { test: /\.css$/, loader: 'style!css' },
+                { test: /\.(jpg|png|gif)$/, loader: 'url-loader' },
                 { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
                 { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
                 { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
                 { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
                 { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
-                { test: /\.(js|jsx)$/, loader: 'babel', include: path.join(__dirname, 'app/src'),  query:{presets:['es2015','react','stage-2']}}
+                { test: /\.(js|jsx)$/, loader: 'babel', include: path.join(__dirname, 'app/src'), query: { presets: ['es2015', 'react', 'stage-2'] } }
             );
 
             break;
@@ -47,15 +47,15 @@ module.exports = function(options){
             entry.bundle = './app/src/main';
 
             loaders.push(
-                { test : /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!postcss!sass?includePaths[]=' + path.resolve(__dirname, './node_modules/compass-mixins/lib')) },
-                { test : /\.css$/, loader: ExtractTextPlugin.extract('style', 'css') },
-                { test : /\.(jpg|png|gif)$/, loader: 'url-loader' },
+                { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!postcss!sass?includePaths[]=' + path.resolve(__dirname, './node_modules/compass-mixins/lib')) },
+                { test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css') },
+                { test: /\.(jpg|png|gif)$/, loader: 'url-loader' },
                 { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
                 { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
                 { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
                 { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
                 { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url-loader" },
-                { test: /\.(js|jsx)$/, loader: 'babel', include: path.join(__dirname, 'app/src'),  query:{presets:['es2015','react','stage-2']}}
+                { test: /\.(js|jsx)$/, loader: 'babel', include: path.join(__dirname, 'app/src'), query: { presets: ['es2015', 'react', 'stage-2'] } }
             );
 
             plugins.push(
@@ -79,12 +79,16 @@ module.exports = function(options){
         output: {
             path: outputpath,
             filename: 'js/[name].js',
+            sourceMapFilename: "app.js.map"
         },
         module: {
-            loaders: loaders
+            loaders: loaders,
+            preLoaders: [{ test: /\.js$/, loaders: ['source-map'] }]
         },
         postcss: [autoprefixer, csswring],
         resolve: resolve,
-        plugins: plugins
+        plugins: plugins,
+        devtool: 'cheap-eval-source-map'
+
     }
 }

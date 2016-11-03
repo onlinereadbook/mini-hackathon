@@ -17,9 +17,9 @@ const Map = ({center, zoom, markers}) => {
     return (
         <GoogleMap center={center} zoom={zoom}>
             {
-                markers.map((marker, idx) => <Marker key={`marker_${idx}`} {...marker.position} text={marker.text} photo={marker.photo} index={idx+1}/>)
+                markers.map((marker, idx) => <Marker key={`marker_${idx}`} {...marker.position} text={marker.text} photo={marker.photo} index={idx + 1} />)
             }
-        </GoogleMap> 
+        </GoogleMap>
     )
 }
 
