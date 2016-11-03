@@ -15,6 +15,7 @@ import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 
 import Menu from '../components/Menu'
 import Dialog from '../components/Dialog'
+import BadgeExampleSimple from '../components/IconButton'
 
 const style = {
     container: {
@@ -56,6 +57,15 @@ const style = {
         width: '100%',
         zIndex: 1,
         textAlign: 'center'
+    },
+    ProfileButton: {
+        position: 'absolute',
+        right: '22%',
+        top: 0,
+        width: '20%',
+        height: '100%',
+        zIndex: 1,
+        textAlign: 'center'
     }
 }
 
@@ -86,6 +96,8 @@ class App extends Component {
             this.setState({ open: false })
         }
     }
+
+
 
     componentDidMount() {
         const that = this
@@ -123,22 +135,27 @@ class App extends Component {
                 <div style={style.content}>
                     <Map center={this.state.init.center} zoom={this.state.init.zoom} markers={markers} />
                 </div>
-                <div style={style.list}>
-                    <MarkerList markers={markers} setMapCenter={this.setMapCenter} />
-                </div>
+
                 <div style={style.functionButton}>
                     <FloatingActionButton mini={true} onClick={this.addMarker.bind(this)}>
                         <ContentAdd />
                     </FloatingActionButton>
-                </div>
 
+                </div>
+                <div style={style.ProfileButton}>
+                    <BadgeExampleSimple></BadgeExampleSimple>
+                </div>
                 <div style={style.ButtonNavigation}>
                     <BottomNavigationExampleSimple handleOpen={this.handleOpen}></BottomNavigationExampleSimple >
 
                 </div>
 
                 <div>
-                    <Menu open={this.state.open} ></Menu>
+                    <Menu open={this.state.open} markers={markers} setMapCenter={this.setMapCenter}>
+
+
+
+                    </Menu>
                     <Dialog></Dialog>
                 </div>
 

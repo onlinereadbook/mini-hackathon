@@ -2,6 +2,7 @@ import React from 'react';
 import Drawer from 'material-ui/Drawer';
 import AppBar from 'material-ui/AppBar';
 import RaisedButton from 'material-ui/RaisedButton';
+import MarkerList from '../components/MarkerList'
 
 export default class DrawerOpenRightExample extends React.Component {
 
@@ -15,12 +16,9 @@ export default class DrawerOpenRightExample extends React.Component {
     render() {
         return (
             <div>
-                <RaisedButton
-                    label="Toggle Drawer"
-                    onTouchTap={this.handleToggle}
-                    />
+
                 <Drawer width={200} openSecondary={true} open={this.props.open} >
-                    <AppBar title="AppBar" />
+                    <MarkerList markers={this.props.markers} setMapCenter={this.props.setMapCenter} />
                 </Drawer>
             </div>
         );
