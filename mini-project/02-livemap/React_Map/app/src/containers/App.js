@@ -13,8 +13,8 @@ import { BottomNavigation, BottomNavigationItem } from 'material-ui/BottomNaviga
 import Paper from 'material-ui/Paper';
 import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 
-import Dialog from 'material-ui/Dialog';
 import Menu from '../components/Menu'
+import Dialog from '../components/Dialog'
 
 const style = {
     container: {
@@ -138,6 +138,7 @@ class App extends Component {
 
                 <div>
                     <Menu open={this.state.open} ></Menu>
+                    <Dialog></Dialog>
                 </div>
 
             </div >

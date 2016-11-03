@@ -22,8 +22,15 @@ class BottomNavigationExampleSimple extends Component {
         open: false,
 
     };
+    constructor(props) {
+        super(props);
+        // this.handleOpen = this.handleOpen.bind(this)
+
+        // this.state = { open: false };
+    }
+
+
     handleOpen() {
-        //this.setState({ open: true });
         console.log('123')
         this.props.handleOpen();
     };

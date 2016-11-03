@@ -88,7 +88,7 @@ module.exports = function (options) {
         postcss: [autoprefixer, csswring],
         resolve: resolve,
         plugins: plugins,
-        devtool: 'cheap-eval-source-map'
+        //devtool: 'cheap-eval-source-map'
 
     }
 }
