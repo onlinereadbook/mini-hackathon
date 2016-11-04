@@ -151,7 +151,7 @@ class App extends Component {
                 </div>
 
                 <div>
-                    <Menu open={this.state.open} markers={markers} setMapCenter={this.setMapCenter}>
+                    <Menu open={this.state.open} markers={markers} setMapCenter={this.setMapCenter} >
 
 
 
