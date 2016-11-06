@@ -11,7 +11,6 @@ const Login = ({isLogin, fbLogin, guestLogin, logout}) => {
                     <div>
                         <FacebookLogin
                             appId="726019197546139"
-                            autoLoad={true}
                             fields="name,email,picture"
                             callback={fbLogin}
                             icon="fa-facebook"
