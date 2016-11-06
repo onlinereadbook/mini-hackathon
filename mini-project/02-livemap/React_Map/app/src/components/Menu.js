@@ -46,7 +46,6 @@ export default class DrawerOpenRightExample extends React.Component {
     render() {
         return (
             <div>
-                >
                 <Drawer width={300} openSecondary={true} open={this.props.open} >
 
                     <HomeIcon style={iconStyles} color={red500} hoverColor={greenA200} />

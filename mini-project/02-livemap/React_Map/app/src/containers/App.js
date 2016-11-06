@@ -8,6 +8,7 @@ import ContentAdd from 'material-ui/svg-icons/content/add';
 import Map from '../components/Map'
 import MarkerList from '../components/MarkerList'
 import BottomNavigationExampleSimple from '../components/BottonNavigation'
+import Login from '../components/Login'
 import FontIcon from 'material-ui/FontIcon';
 import { BottomNavigation, BottomNavigationItem } from 'material-ui/BottomNavigation';
 import Paper from 'material-ui/Paper';
@@ -63,9 +64,14 @@ const style = {
         right: '22%',
         top: 0,
         width: '20%',
-        height: '100%',
         zIndex: 1,
         textAlign: 'center'
+    },
+    login: {
+        position: 'absolute', 
+        left: 0, 
+        top: 0,
+        zIndex: 1
     }
 }
 
@@ -83,7 +89,10 @@ class App extends Component {
                 center: { lat: 25.0339031, lng: 121.5623212 },
                 zoom: zoom
             },
-            open: false
+            open: false,
+            isLogin: false,
+            watchId: 0,
+            userData: {}
         }
 
         this.handleOpen = this.handleOpen.bind(this)
@@ -94,36 +103,6 @@ class App extends Component {
             this.setState({ open: true })
         } else {
             this.setState({ open: false })
-        }
-    }
-
-
-
-    componentDidMount() {
-        const that = this
-
-        if (navigator.geolocation) {
-            // 設定目前位置
-            navigator.geolocation.watchPosition((position) => {
-                const { markerAction, markers } = that.props
-                const location = { lat: position.coords.latitude, lng: position.coords.longitude }
-
-                let myLocation = markers.filter(x => x.userId == 'andy')[0]
-
-                if (myLocation) {
-                    markerAction.setLocation('andy', location)
-                } else {
-                    markerAction.addMarker({
-                        position: location,
-                        text: '我在這',
-                        photo: 'https://goo.gl/IBEpr8',
-                        userId: 'andy'
-                    })
-
-                    this.setMapCenter(location)
-                }
-
-            })
         }
     }
 
@@ -149,16 +128,16 @@ class App extends Component {
                     <BottomNavigationExampleSimple handleOpen={this.handleOpen}></BottomNavigationExampleSimple >
 
                 </div>
-
-                <div>
-                    <Menu open={this.state.open} markers={markers} setMapCenter={this.setMapCenter} >
-
-
-
-                    </Menu>
-                    <Dialog></Dialog>
+                <div style={style.login}>
+                    <Menu open={this.state.open} markers={markers} setMapCenter={this.setMapCenter} />
+                    <Dialog />
+                    <Login 
+                        isLogin={this.state.isLogin} 
+                        fbLogin={this.fbLogin.bind(this)}
+                        guestLogin={this.guestLogin.bind(this)}
+                        logout={this.logout.bind(this)}
+                    />
                 </div>
-
             </div >
         )
     }
@@ -192,6 +171,84 @@ class App extends Component {
                 center: location,
                 zoom: zoom
             }
+        })
+    }
+
+    watchPosition(userData) {
+        const that = this
+
+        if (navigator.geolocation) {
+            // 設定目前位置
+            const watchId = navigator.geolocation.watchPosition((position) => {
+
+                const { markerAction, markers } = that.props
+                const location = { lat: position.coords.latitude, lng: position.coords.longitude }
+                
+                let myLocation = markers.filter(x=>x.userId == userData.userId)[0]
+                
+                if (myLocation) {
+                    markerAction.setLocation(userData.userId, location)
+                } else {
+                    markerAction.addMarker({
+                        position: location,
+                        ...userData
+                    })
+
+                    this.setMapCenter(location)
+                }         
+            })
+            
+            this.setState({ watchId })
+        }   
+    }
+
+    fbLogin(response) {
+        debugger
+        if (response.status) return;
+
+        const userData = {
+            text: response.name,
+            photo: response.picture.data.url,
+            userId: response.id,
+            role: 'FB'
+        }
+
+        this.watchPosition(userData)
+        this.setState({
+            isLogin: true,
+            userData
+        })
+    }
+
+    guestLogin() {
+        const userData = {
+            text: '訪客',
+            photo: 'https://goo.gl/6dcw3S',
+            userId: new Date().getTime(),
+            role: 'GUEST'
+        }
+
+        this.watchPosition(userData)
+        this.setState({
+            isLogin: true,
+            userData
+        })
+    }
+
+    logout() {
+        const { markerAction } = this.props
+        const {userData, watchId} = this.state
+        debugger
+
+        markerAction.removeMarker(userData.userId)
+        navigator.geolocation.clearWatch(watchId);
+
+        if (userData.role == 'FB') {
+            FB.logout()
+        }
+
+        this.setState({
+            isLogin: false
         })
     }
 }

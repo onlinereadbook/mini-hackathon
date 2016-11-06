@@ -53,14 +53,21 @@ const initState = [
 ];
 
 const markerReducer = (state=initState, action) => {
+    let index
     switch(action.type) {
         case types.ADD_MARKER:
             return [
                 ...state,
                 action.marker
             ]
+        case types.REMOVE_MARKER:
+            index = state.findIndex((obj) => obj.userId == action.userId)
+            return [
+                ...state.slice(0, index),
+                ...state.slice(index+1)
+            ]
         case types.SET_LOCATION:
-            const index = state.findIndex((obj) => obj.userId == action.userId)
+            index = state.findIndex((obj) => obj.userId == action.userId)
             
             return [
                 ...state.slice(0, index),
