@@ -238,7 +238,6 @@ class App extends Component {
     logout() {
         const { markerAction } = this.props
         const {userData, watchId} = this.state
-        debugger
 
         markerAction.removeMarker(userData.userId)
         navigator.geolocation.clearWatch(watchId);
